@@ -1,20 +1,41 @@
-// ch07_3.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
-}
+    //Question #1
+    int smaller{};
+    int larger{};
+    
+    std::cout << "Enter an integer: ";
+    std::cin >> smaller;
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+    std::cout << "Enter a larger integer: ";
+    std::cin >> larger;
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+    if (larger <= smaller) 
+    {
+        std::cout << "Swapping the values\n";
+
+        int hold{ larger };
+        larger = smaller;
+        smaller = hold;
+    } // hold dies here
+
+    std::cout << "The smaller value is " << smaller << '\n';
+    std::cout << "The larger value is " << larger << '\n';
+
+    return 0;
+}// smaller and larger die here
+
+
+    // Question #2
+    // Q: What’s the difference between a variable’s scope, duration, and lifetime? 
+    // By default,what kind of scope and duration do local variables have (and what 
+    // do those mean)?
+    // A: A variable’s scope determines where the variable is accessible within the 
+    // source code. Duration defines the rules that govern when a variable is created and destroyed.
+    // A variable’s lifetime is the actual time between its creation and destruction.
+    // Local variables have block scope, which means they can be accessed from their point of definition
+    // to the end of the block they are defined within.
+    // Local variables have automatic duration, which means they are created at the point of definition, 
+    // and destroyed at the end of the block in which they are defined.
