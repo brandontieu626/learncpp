@@ -15,4 +15,4 @@ int main()
 // Global variables have global scope (a.k.a. file scope), which means they can 
 // be accessed from the point of declaration to the end of the file in which they are declared.
 // Global variables have static duration, created at program start and destroyed at end.
-// Global variables can have external or internal linkage from static and extern keywords
+// Global variables can have external or internal linkage from extern and static keywords
