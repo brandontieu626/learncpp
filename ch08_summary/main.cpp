@@ -141,17 +141,16 @@ int main()
 	//assert(isPrime(13417));
 
 	//Question #3:
-	constexpr int guesses{ 7 }; // the user has this many guesses
-	constexpr int min{ 1 };
-	constexpr int max{ 100 };
+	//constexpr int guesses{ 7 }; // the user has this many guesses
+	//constexpr int min{ 1 };
+	//constexpr int max{ 100 };
 
-	do
-	{
-		playHiLo(guesses, min, max);
-	} while (playAgain());
+	//do
+	//{
+	//	playHiLo(guesses, min, max);
+	//} while (playAgain());
 
-	std::cout << "Thank you for playing.\n";
+	//std::cout << "Thank you for playing.\n";
 
-	return 0;
 	return 0;
 }
