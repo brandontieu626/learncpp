@@ -47,3 +47,7 @@ int main()
     return 0;
 }
 
+// Question #2:
+// If we remove the const from the print() function declaration and definition
+// , the program will no longer compile. Why not?
+// A: t2 is a const object so it needs to only call const functions
